@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        *::-webkit-scrollbar
+        {
+            width: 12px;
+            background-color: #000;
+        }
+
+        *::-webkit-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px #11dec9;
+            background-color: #11dec9;
+        }
+
+        .section1 {
+            width: 70%;
+            height: 11rem;
+            background: #11dec9;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+        .profile-img-section {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-data {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .profile-img {
+            height: 6rem;
+            width: 6rem;
+            border-radius: 20%;
+        }
+
+        .section2 {
+            width: 70%;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            font-size: larger;
+            justify-content: center;
+            align-items: start;
+            color: #11dec9;
+            margin-bottom: 3%;
+        }
+
+        .section3 {
+            width: 70%;
+            height: 16rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            margin-bottom: 3%;
+        }
+
+        .section4 {
+            width: 70%;
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: #11dec9;
+            margin-bottom: 3%;
+        }
+
+        .section-title {
+            font-weight: bold;
+        }
+
+        .ed-table {
+            width: 100%;
+            border: 2px solid #000;
+            border-collapse: inherit;
+            color: #11dec9;
+        }
+
+        th {
+            background-color: #11dec9;
+            color: #000;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid #11dec9;
+        }
+
+        .companies {
+            font-weight: bold;
+            color: #11dec9;
+
+        }
+
+        .color-primary {
+            color: #11dec9;
+        }
+
+        .section5 {
+            width: 70%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: #11dec9;
+            margin-bottom: 3%;
+        }
+
+        .section6 {
+            width: 70%;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+            color: #11dec9;
+            margin-bottom: 3%;
+        }
+
+        li {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+
+        .text-white {
+            color: #11dec9;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="./asserts/PS Profile.jpg"
+                alt="doggo" class="profile-img">
+        </div>
+        <div class="profile-data">
+            <h1> Pragatheesh S</h1>
+            <h3> pragatheeshs66@gmail.com </h3>
+        </div>
+    </div>
+
+    <div class="section2">
+        <h1 class="section-title color-primary"> Objective </h1>
+        <p>
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            I have a great foundation in machine learning algorithms, neural networks, and data preprocessing techniques.
+            Build projects using real-world datasets to apply machine learning models and evaluate their performance.
+            Explored AI techniques like reinforcement learning and deep learning, and contribute to open-source AI projects for hands-on experience.
+        </p>
+    </div>
+
+    <div class="section3">
+        <h1 class="section-title color-primary">
+            Education
+        </h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>BVM</td>
+                <td>2020-2021</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>BVM</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>UG</td>
+                <td>SIET</td>
+                <td>2022-2026</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section4">
+        <h1 class="section-title color-primary">
+            Internships
+        </h1><br>
+        <p>
+            <span class="companies color-primary"> Sundar Pichai / Google LLC</span> <br>
+            JUNE 2023 – PRESENT
+            Managed and grew key accounts by developing strong relationships, identifying opportunities, and
+            implementing effective sales strategies.
+        </p>
+        <br>
+        <p>
+            <span class="companies color-primary">Sundar Pichai / Alphabet Inc.</span><br>
+            JUNE 2024 – PRESENT
+            Managed and grew key accounts by developing strong relationships, identifying opportunities, and
+            implementing effective sales strategies.
+
+        </p>
+    </div>
+
+    <div class="section5">
+        <h1 class="section-title color-primary">
+            Skills
+        </h1><br>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Machine learning</li>
+            <li>Python Programming</li>
+            <li>Java Programming</li>
+            <li>MERN</li>
+            <li>AWS</li>
+        </ul>
+    </div>
+
+    <div class="section6">
+        <a href="https://github.com/PragatheeshSOS">
+            <i class="fa-brands fa-github text-white"></i>
+        </a>
+        <a href="mailto:pragatheeshs66@gmail.com">
+            <i class="fa-solid fa-envelope text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pragatheesh-sos">
+            <i class="fa-brands fa-linkedin text-white"></i>
+        </a>
+    </div>
+</body>
+
+<!-- Javascript -->
+<script>
+    let number = 99
+    console.log(number)
+    
+    let string = "bye"
+    console.log(string)
+
+    let boolean = false
+    console.log(boolean)
+
+    let nullva = null
+    console.log(nullva)
+
+    let undef = undefined
+    console.log(undef)
+
+    let obj = {"Country": "India", "State": "TamilNadu"}
+    console.log(obj)
+
+    let arr = [12,"diss",obj,true]
+    console.log(arr)
+</script>
+</html>
